@@ -4,11 +4,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  label{
+  label {
     font-family: $ff-semibold;
     font-size: $fs-14;
     padding: 0.5em 0;
-    span{
+    span {
       font-family: $ff-regular;
       color: $text-clr-grey;
     }
@@ -35,7 +35,7 @@
       box-sizing: border-box;
       display: inline-block;
       position: absolute;
-      top:	1.9375rem;
+      top: 1.93rem;
       left: 0;
       color: $text-clr-grey;
       border: 1px solid $border-clr;
