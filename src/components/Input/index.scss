@@ -18,6 +18,7 @@
     padding: 0.875rem 0.75rem;
     border: 1px solid $border-clr;
     border-radius: 0.25em;
+    background-color: transparent;
     font-size: $fs-14;
     &::placeholder {
       color: $text-clr-grey;
@@ -35,14 +36,16 @@
       box-sizing: border-box;
       display: inline-block;
       position: absolute;
-      top: 1.93rem;
+      top: 1.935rem;
       left: 0;
       color: $text-clr-grey;
-      border: 1px solid $border-clr;
+      border: 1px solid;
+      border-color: transparent $border-clr transparent transparent;
       background-color: $background-light;
-      padding: 0.875rem 0.5rem 0.875rem 0.75rem;
+      padding: 0.8745rem 0.5rem 0.8745rem 0.75rem;
       border-radius: 0.25em 0 0 0.25em;
       font-size: $fs-14;
+      z-index: -1;
     }
   }
 }
