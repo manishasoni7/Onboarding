@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 3em;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 1rem;
   &-heading {
     display: flex;
@@ -45,6 +45,9 @@
       gap: 1.75em;
       & > * {
         flex: 1;
+      }
+      @media (max-width: 400px) {
+        flex-direction: column;
       }
     }
     &-form {
