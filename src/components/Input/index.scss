@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  label{
+    font-family: $ff-semibold;
+    font-size: $fs-14;
+    padding: 0.5em 0;
+    span{
+      font-family: $ff-regular;
+      color: $text-clr-grey;
+    }
+  }
+  .default-input {
+    outline: none;
+    padding: 1rem;
+    border: 1px solid $border-clr;
+    border-radius: 0.25em;
+    font-size: $fs-14;
+    &::placeholder {
+      color: $text-clr-grey;
+    }
+    &:hover,
+    &:focus {
+      border-color: $mauve-primary;
+    }
+  }
+  .static {
+    &-input {
+      padding-left: 10rem;
+    }
+    &-data {
+      box-sizing: border-box;
+      display: inline-block;
+      position: absolute;
+      top:	1.9375rem;
+      left: 0;
+      color: $text-clr-grey;
+      border: 1px solid $border-clr;
+      background-color: $background-light;
+      padding: 1rem;
+      border-radius: 0.25em 0 0 0.25em;
+      font-size: $fs-14;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.default-btn {
+  cursor: pointer;
+  background-color: $mauve-primary;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1em 2em;
+  color: $light-clr;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2);
+  &:hover,
+  &:focus {
+    background-color: $mauve-dark;
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
+  }
+}

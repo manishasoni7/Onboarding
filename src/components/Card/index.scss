@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.card {
+  border: 1px solid $border-clr;
+  border-radius: 0.25em;
+  padding: 1.25em 1em;
+  &:hover,
+  &:focus {
+    border-color: $mauve-primary;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
+    svg {
+      fill: $mauve-primary;
+    }
+  }
+  &-icon {
+    width: 1.5rem;
+    fill: $text-clr;
+    margin-bottom: 1em;
+  }
+  &-heading {
+    font-family: $ff-semibold;
+    color: $text-clr;
+  }
+  &-content {
+    color: $text-clr;
+    font-size: $fs-14;
+  }
+}
