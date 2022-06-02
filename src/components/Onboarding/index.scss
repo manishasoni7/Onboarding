@@ -7,6 +7,7 @@
   justify-content: center;
   gap: 3em;
   height: 100vh;
+  margin: 1rem;
   &-heading {
     display: flex;
     align-items: center; 
@@ -26,7 +27,7 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
-    margin: 0 2em 1em 2em;
+    margin-bottom: 1em;
     &-heading {
       font-family: $ff-semibold;
       font-size: 1.875rem;
@@ -37,10 +38,11 @@
       font-size: $fs-14;
       color: $text-clr-grey;
       margin-bottom: 1em;
+      text-align: center;
     }
     &-cards {
       display: flex;
-      gap: 2em;
+      gap: 1.75em;
       & > * {
         flex: 1;
       }
@@ -51,8 +53,7 @@
       gap: 0.5em;
       width: 22rem;
       @media (max-width: 400px) {
-        width: unset;
-        margin: 0 3rem;
+        width: 16rem;
       }
     }
     .default-btn {
